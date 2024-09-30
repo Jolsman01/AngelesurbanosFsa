@@ -1,0 +1,228 @@
+.cuadrodeinforme {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  padding: 0rem;
+  margin: 0;
+  background: linear-gradient(to bottom, #131b69 0%, var(--azul) 30%, #131b69 80%);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.container-principal{
+  display: flex;
+  flex-direction: column;
+  width: 100vw; /* Ancho del 100% de la ventana gráfica */
+  height: 100vh; /* Altura del 100% de la ventana gráfica */
+  margin: 0; /* Elimina cualquier margen */
+  padding: 0; /* Elimina cualquier padding */
+}
+
+#Colores-telas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start; /* Centra verticalmente el contenido */
+  width: 100%;
+}
+
+/* .primeracolumna{
+  view-timeline-name: --nashe;
+  view-timeline-axis: block;
+
+  animation-timeline: --nashe;
+  animation-name: show;
+} */
+
+
+.cuadrodeinforme h3{
+  font-family: var(--fuentePrincipal);
+  font-size: 3.2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  color: #FF4500;
+}
+
+.inputone {
+  margin-bottom: 1rem;
+}
+
+.cuadrodeinforme select,
+.cuadrodeinforme textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fafbf9;
+  border-radius: 4px;
+}
+
+#informe_title{
+  font-size: 3.2rem;
+  color: var(--blanco);
+  text-align: center;
+}
+
+.Segundacolumna {
+  background-color: #FF4500; 
+  padding: 2rem;
+  border-radius: 5%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* view-timeline-name: --nashe;
+  view-timeline-axis: block;
+  
+  animation-timeline: --nashe;
+  animation-name: show; */
+}
+
+.Segundacolumna h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #FF4500;
+}
+
+.Segundacolumna h3 {
+  font-family: var(--fuentePrincipal);
+  font-size: 3.2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  color: #fdfdfd;
+}
+
+.cuadrodeinforme button.unnuevo-button,
+.botondepdf {
+  width: 100%;
+  padding: 1rem;
+  background-color: #f17420;
+  margin-top: 2%;
+  border: none;
+  border-radius: 1rem;
+  color: rgb(249, 249, 252);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+}
+
+.cuadrodeinforme button.unnuevo-button:hover {
+  background-color: #cf6721; 
+  border-radius: .8rem;
+
+}
+
+.pequeños-box{
+  width: 100%;
+  height: 45rem;
+  overflow:scroll;
+}
+
+#dynamicOptions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#dynamicOptions label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f46200;
+}
+
+#dynamicOptions input[type="number"] {
+  display: block;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100px;
+}
+
+#formGenerales,
+#formParticulares,
+#selectorpartgener {
+  color: #f46200;
+  cursor: pointer;
+}
+
+footer {
+  color: var(--blanco);
+  padding: 40px 0;
+  text-align: center;
+  font-family: var(--fuentePrincipal);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content,
+.footer-social {
+  margin: 20px;
+}
+
+.footer-content h3,
+.footer-social h3 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  color: var(--naranja);
+}
+
+.footer-content p,
+.footer-social a {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los iconos */
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.footer-social img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Hacer las imágenes circulares */
+  transition: transform 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid var(--azul);
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 760px) {
+  #dynamicOptions input[type="number"],
+  #selectorpartgener,
+  #formGenerales,
+  #formParticulares {
+      width: 100%; /* Asegurarse de que los inputs tomen todo el ancho disponible */
+      font-size: 1.4rem; /* Reducir ligeramente el tamaño del texto */
+  }
+}

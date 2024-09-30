@@ -1,0 +1,142 @@
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.2rem;
+    padding-left: 3.4rem; /*Para que la parte izquierda del nav se iguale a la derecha pq los links tienen su propio padding*/
+    background: linear-gradient(to right, var(--blanco) 0%, var(--azul) 22%);
+    user-select: none; /*Solo por cuestión de estetica, desactívalo si querés pero mejor dejalo así */
+}
+
+@media screen and (max-width: 980px ) {
+    .navbar {
+
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        height: auto;        
+        background: linear-gradient(to bottom, var(--naranja) 0%, var(--azul) 60%);
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 760px ) {
+    .navbar {
+
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        height: auto;        
+        background: linear-gradient(to bottom, var(--naranja) 0%, var(--azul) 60%);
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/* Buttons */
+.navbar .nav-links a.btn {
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 0.1rem transparent; /*Para que no se vean los bordes*/
+    font-weight: 300;
+    font-size: 2.7rem;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.navbar .nav-links a.btn:hover {
+    color: #caadad;
+}
+
+
+/* Comienzo del hover con dos lineas inferiores */
+.navbar .nav-links a.btn::before,
+.navbar .nav-links a.btn::after {
+    content: '';
+    position: absolute;
+    border-bottom: 0.4rem solid var(--naranja);
+    transition: 0.3s all;
+}
+
+.navbar .nav-links a.btn::before {
+    bottom: 0rem;
+    width: 0;
+    right: 0;
+}
+.navbar .nav-links a.btn:hover:before {
+    bottom: 0rem;
+    width: 85%;
+}
+.navbar .nav-links a.btn::after {
+    border-bottom: 0.4rem solid var(--naranja);
+    bottom: -0.65rem;
+    width: 0;
+    left: 0;
+}
+.navbar .nav-links a.btn:hover:after {
+    border-bottom: 0.4rem solid var(--naranja);
+    bottom: -0.65rem;
+    width: 60%;
+    color: var(--naranja);
+}
+/* Final del hover con dos lineas inferiores */
+
+
+/* Logo */
+.logo {
+    height: 7rem;
+    width: 7rem;
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 980px) {
+    
+    .logo {
+        margin-top: 1rem;
+    }
+}
+
+/* Para dispositivos móviles (máximo ancho de 760px) */
+@media screen and (max-width: 760px) {
+    .navbar {
+        flex-direction: column; /* El menú se mostrará en una columna */
+    }
+    .nav-links {
+        display: none; /* Escondemos las opciones de navegación por defecto */
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column; /* Muestra las opciones en columna cuando el menú se activa */
+    }
+    .hamburger {
+        display: block; /* Mostrar el botón de menú hamburguesa */
+        cursor: pointer;
+    }
+}
+
+/* Agregar el estilo para el icono del menú hamburguesa */
+.hamburger {
+    display: none; /* Oculto por defecto en pantallas grandes */
+    font-size: 2.5rem;
+    color: var(--blanco);
+}
+
+
+
+
+
+

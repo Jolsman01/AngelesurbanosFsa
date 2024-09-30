@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="../imagenes/logos/logo_angeles_urbanos.png" type="image/png">
+  <title>Angeles Urbanos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/portada.css">
+  <link rel="stylesheet" href="../css/disenemos.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/cuadroconinforme.css">
+  <link rel="stylesheet" href="../css/nosotros.css">
+
+</head>
+
+<body>
+
+    <!-- Comienzo de la sección del nav -->
+    <section class="one">
+     
+      <nav class="navbar">
+  
+        <a href="index.html">
+          <div class="logo">        
+          <img src="../imagenes/logos/logo_angeles_urbanos.png" alt="Logo de la Empresa">
+        </div>
+      </a>
+  
+        <div class="nav-links">
+  
+          <a href="#main-section" class="btn" >Diseños</a> 
+          <a href="#Colores-telas" class="btn" >Detalles de prendas</a>
+          <a href="#Footer_contacto" class="btn" >Contacto</a>
+        </div>
+      </nav>
+      <!-- Final de la sección del nav -->
+  
+      <figure class="figure">
+  
+        <section>
+          <div class="sombra">
+            <div class="hero"></div>
+          </div>
+          
+          <div class="text-container">
+            <p>tu año</p>
+            <p>tu promo</p>
+            <p>tu chomba</p>
+          </div>
+        </section>
+      </figure>
+    </section>
+
+    
+     <!-- Comienzo de la sección diseñemos  -->
+    <section class="two">
+      <main class="main fondo_disenemos" id="main-section">
+        <section class="contenedor">
+          <h1 class="titulo text-center mt-5">
+            <p class="efecto_hover">¡</p>
+            <p class="efecto_hover">D</p>
+            <p class="efecto_hover">I</p>
+            <p class="efecto_hover">S</p>
+            <p class="efecto_hover">E</p>
+            <p class="efecto_hover">Ñ</p>
+            <p class="efecto_hover">E</p>
+            <p class="efecto_hover">M</p>
+            <p class="efecto_hover">O</p>
+            <p class="efecto_hover">S</p>
+            <p class="efecto_hover m-s"> </p>
+            <p class="efecto_hover">J</p>
+            <p class="efecto_hover">U</p>
+            <p class="efecto_hover">N</p>
+            <p class="efecto_hover">T</p>
+            <p class="efecto_hover">O</p>
+            <p class="efecto_hover">S</p>
+            <p class="efecto_hover">!</p>
+          </h1>
+  
+          <section class="iconos_disenar"> 
+            <div class="cuadro">
+              <button class="cuadro_iconos">
+                <img src="../imagenes/logos/logo_chomba.png" alt="CHOMBA">
+                <h3>chomba</h3>
+              </button class="cuadro_iconos">
+            </div>
+            <div class="cuadro">
+              <button class="cuadro_iconos">
+                <img src="../imagenes/logos/logo_remera_en_o.png" alt="REMERA EN O">
+                <h3>remera</h3>
+              </button class="cuadro_iconos">
+            </div>
+            <div class="cuadro">
+              <button class="cuadro_iconos">
+                <img src="../imagenes/logos/logo_remera_en_v.png" alt="REMERA EN O">
+                <h3>remera v</h3>
+              </button class="cuadro_iconos">
+            </div>
+            <div class="cuadro">
+              <button class="cuadro_iconos">
+                <img src="../imagenes/logos/logo_campera.png" alt="CAMPERA">
+                <h3>campera</h3>
+              </button class="cuadro_iconos">
+            </div>
+            <div class="cuadro">
+              <button class="cuadro_iconos">
+                <img src="../imagenes/logos/logo_canguro.png" alt="CANGURO" >
+                <h3>canguro</h3>
+              </button class="cuadro_iconos">
+            </div>
+            <div class="cuadro">
+              <button class="cuadro_iconos">
+                <img src="../imagenes/logos/logo_gorra.png" alt="GORRAS">
+                <h3>gorras</h3>
+              </button class="cuadro_iconos">
+            </div>
+          </section>
+        </section>
+      </main>
+    </section>
+
+    <!-- Comienzo del cuadro de reporte -->
+     <div class="container-principal">
+    <section class="three">
+      <main class="cuadrodeinforme">
+        <div class="container" id="Colores-telas">
+          <div class="primeracolumna">
+            <h3>Tipo de prenda</h3>
+            <div class="inputone">
+              <select id="tipoPrenda" onchange="actualizarOpcionesTela()">
+                <option value="remera">Remera</option>
+                <option value="remera_sublimacion">Remera Sublimación</option>
+                <option value="chomba">Chomba</option>
+                <option value="buzo">Canguro</option>
+                <option value="campera">Campera</option>
+                <option value="rompevientos">Rompevientos</option>
+              </select>
+            </div>
+
+            <h3>Cantidad de prendas</h3>
+            <div class="inputone">
+              <input type="number" id="cantidadPrendas" min="1" value="1">
+            </div>
+
+            <h3>Tipo de tela</h3>
+            <div class="inputone">
+              <select id="tipoTela"></select>
+            </div>
+
+            <h3>Ubicación de Logos/Agregados</h3>
+            <div id="dynamicOptions"></div>
+
+            <div>
+              <h3>Especificaciones de prendas</h3>
+              <div id="selectorpartgener">
+                <input type="radio" id="general" name="generalParticular" value="general" onchange="mostrarFormulario()">
+                <label for="general">Generales (todas iguales)</label><br>
+                <input type="radio" id="particular" name="generalParticular" value="particular" onchange="mostrarFormulario()">
+                <label for="particular">Particulares (cada una diferente)</label>
+              </div>
+              
+              <!-- Contenedor para prendas generales -->
+              <div id="formGenerales" style="display: none;">
+                <h3>Cantidad de cada talle:</h3>
+                <!-- Aquí agregaremos los inputs de talles dinámicamente -->
+                <div id="tallesGenerales"></div>
+              </div>
+              
+              <!-- Contenedor para prendas particulares -->
+              <div id="formParticulares" style="display: none;">
+                <h3>Especificaciones de cada prenda:</h3>
+                <!-- Aquí agregaremos los formularios individuales de cada prenda dinámicamente -->
+                <div id="especificacionesParticulares"></div>
+              </div>
+            </div>
+
+            <div id="camposTalles" style="display:none">
+              <h3>Cantidad de cada talle:</h3>
+              <div class="inputone">
+                  <label for="talle10">Talle 10:</label>
+                  <input type="number" id="talle10" min="0" value="0"><br>
+                  <label for="talle12">Talle 12:</label>
+                  <input type="number" id="talle12" min="0" value="0"><br>
+                  <label for="talle14">Talle 14:</label>
+                  <input type="number" id="talle14" min="0" value="0"><br>
+                  <label for="talle16">Talle 16:</label>
+                  <input type="number" id="talle16" min="0" value="0"><br>
+                  <label for="talleS">Talle S:</label>
+                  <input type="number" id="talleS" min="0" value="0"><br>
+                  <label for="talleM">Talle M:</label>
+                  <input type="number" id="talleM" min="0" value="0"><br>
+                  <label for="talleL">Talle L:</label>
+                  <input type="number" id="talleL" min="0" value="0"><br>
+                  <label for="talleXL">Talle XL:</label>
+                  <input type="number" id="talleXL" min="0" value="0"><br>
+                  <label for="talleXXL">Talle XXL:</label>
+                  <input type="number" id="talleXXL" min="0" value="0"><br>
+                  <label for="talleXXXL">Talle XXXL:</label>
+                  <input type="number" id="talleXXXL" min="0" value="0"><br>
+              </div>
+          </div>
+
+          <h3>Fecha de Pedido</h3>
+          <div class="inputone">
+            <input type="date" id="fechaEntrega">
+          </div>
+
+          
+            <h3>Otros detalles:</h3>
+            <div class="inputone">
+              <textarea id="otrosDetalles" placeholder="Ej: Ingrese otros detalles aquí..."></textarea>
+            </div>
+
+            <h3>Nombre del Usuario</h3>
+                    <div class="inputone">
+                        <input type="text" id="username" placeholder="Ingrese su nombre">
+                    </div>
+
+            <div>
+              <button class="unnuevo-button" onclick="agregarOtroPedido()">Agregar otra Prenda al mismo pedido</button>
+            </div>
+        </div>
+
+          <div class="Segundacolumna">
+            <div class="pequeños-box" id="detallesPedido">
+              <h3 id="informe_title">INFORME DE PRODUCTOS</h3>
+              <h4>PASOS A SEGUIR</h4>
+              <p id="modeloChomba">1. Completar todos los campos</p>
+              <p id="tallesNombres">Talles y nombres:</p>
+              <ul id="listaTallesNombres"></ul>
+              <p id="tipoTelaInfo">Tipo de tela:</p>
+              <p id="ubicacionNombreInfo">Información de logos: </p>
+              <p id="otrosDetallesInfo">Otros detalles:</p>
+              <p>2. Presionar Generar informe</p>
+              <p>3. Hacer el mismo proceso y posteriormente presionar el botón "Agregar prenda" si se quiere agregar otra más al pedido.</p>
+              <p>4. Si ya tienes todas las prendas que quieres. Precionar "Descargar PDF" para obtener toda la información en un PDF.</p>
+              <p id="otrosDetallesText"></p>
+            </div>
+            <button class="unnuevo-button" onclick="generarInforme()">Generar informe</button>
+            <button class="botondepdf" id="download-pdf" onclick="downloadPDF()">Descargar Pedido en PDF</button>
+
+        </div>
+      </div>
+
+      <footer>
+        <div id="Footer_contacto"  class="footer-container">
+            <div class="footer-content">
+                <h3>Contacto</h3>
+                <p>Teléfono: +54 370 499-5330</p>
+                <p>Email: angelesurbanosfsa@gmail.com</p>
+                <h4>ENVIANOS TU DISEÑO</h4>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="https://wa.me/5493704995330?text=Hola,%20me%20gustaría%20más%20información" target="_blank" class="social-icon whatsapp">
+                    <img src="../imagenes/logos/Logo_color_ws.png" alt="WhatsApp">
+                </a>
+                <a href="https://www.instagram.com/angelesurbanosinsta/" target="_blank" class="social-icon instagram">
+                    <img src="../imagenes/logos/Logo_color_insta.png" alt="Instagram">
+                </a>
+                <a href="mailto:angelesurbanosfsa@gmail.com?subject=Consulta&body=Hola%2C%20tengo%20una%20consulta..." class="social-icon gmail">
+                    <img src="../imagenes/logos/Logo_color_gmail.png" alt="Gmail">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Angeles Urbanos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </main>
+  </section>
+</div>
+  </body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="../js/seccion-disenar.js"></script>
+    <script src="../js/cuadroconreporte.js"></script>
+    
+    </html>
